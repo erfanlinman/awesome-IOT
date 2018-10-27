@@ -184,7 +184,7 @@ def write_file(structure, path):
                                key=lambda s: s.casefold()):
                 writer.write(item + '\n')
         writer.write('- - -\n')  # separator between main parts
-        writer.write(structure['footer'] + '\n')  # wrote footer part with no change
+        writer.write(structure['footer'])  # wrote footer part with no change
         writer.close()
     return True
 
