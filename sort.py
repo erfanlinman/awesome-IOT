@@ -149,7 +149,7 @@ def write_file(structure, path):
         path of the file you want to wrote in it
 
     """
-
+    exclude_list = []  # exclude some group name from sorting
     with open(path, 'w+') as writer:
         writer.write(structure['header'])  # wrote header part with no change
         writer.write('- - -\n')  # separator between main parts
@@ -157,11 +157,18 @@ def write_file(structure, path):
         # as list markdown
         for group_name in sorted(structure['table_content'],
                                  key=lambda s: s.casefold()):
-            writer.write(group_name + '\n')
+            if ('Contributing' not in group_name and
+                    'Other Awesome Lists' not in group_name):
+                writer.write(group_name + '\n')
+            else:
+                exclude_list.append(group_name)
             # sorted and wrote the subgroup names from table of content in file
             for subgroup in sorted(structure['table_content'][group_name],
                                    key=lambda s: s.casefold()):
                 writer.write(subgroup + '\n')
+        # write some excluded group name at the end of the table of content
+        for group_name in exclude_list:
+            writer.write(group_name + '\n')
         writer.write('- - -\n')  # separator between main parts
         # sorted and wrote the subgroup names from content part in file
         # as section and list markdown
