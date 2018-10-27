@@ -2,8 +2,12 @@
 This repository was made to got awesome things together about the internet of things, from OSs to Papers.
 - - -
 - [Awesome IOT(Internet of Things)](#awesome-IOT)
-- [Contributing](#contributing)
+- [OS](#oss)
+- [Contributing](#contributing-chart_with_upwards_trend)
 - - -
+## OSs
+*Operating systems  Monolithic, Micro, and Hybrid kernels*
+* [Contiki](https://github.com/contiki-os/contiki) - complete OS which with minimum effort could be installed on a variety of hardware and built an IoT network very fast.
 - - -
 # Contributing :chart_with_upwards_trend:
 Fork it. Add anything that thinks it worthwhile and pulls request it.
