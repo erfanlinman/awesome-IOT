@@ -8,8 +8,9 @@ This repository was made to got awesome things together about the internet of th
 - - -
 ## OSs
 *Operating systems => Monolithic, Micro, and Hybrid kernels*
-* [Contiki](https://github.com/contiki-os/contiki) - complete OS which with minimum effort could be installed on a variety of hardware and built an IoT network very fast.(Monolithic)
-* [RIOT](https://github.com/RIOT-OS/RIOT) - Advance, compact, and professional with the great support of different hardware, also highly Implemented based on RFCs.(Micro)
+* [Contiki](https://github.com/contiki-os/contiki) - complete OS which with minimum effort could be installed on a variety of hardware and built an IoT network very fast. (Monolithic)
+* [RIOT](https://github.com/RIOT-OS/RIOT) - Advance, compact, and professional with the great support of different hardware, also highly Implemented based on RFCs. (Micro)
+* [TinyOS](https://github.com/tinyos/tinyos-main) - A component-based os and platform especially targeting wireless sensor networks. (?)
 
 ## RFCs
 *All the RFCs about various IoT stacks.*
